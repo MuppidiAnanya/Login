@@ -1,0 +1,50 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+Login - Quick Fix
+{% endblock %}
+
+{% block content %}
+<h1>Quick Fix Household Services</h1>
+<h4>Login</h4>
+
+<form method="POST">
+    <label for="username" class="form-label">Registered Email ID:
+        <input type="text" id="username" name="username" class="form-control" required>
+    </label>
+    <br>
+    <label for="password">Password:
+        <input type="password" id="password" name="password" class="form-control" required>
+    </label>
+    <input type="submit" value="Login" class="btn btn-success">
+    <a href="/register">Create Account?</a>
+    <a href="/profregister">Register as Professional</a>
+</form>
+{% endblock %}
+
+{% block style %}
+<style>
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        }
+    input{
+        margin: 10px;
+    }
+    a{
+        margin: 5px;
+    }
+   
+    h1{
+        margin-top: 100px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    h4{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+</style>
+{% endblock %}
