@@ -50,8 +50,7 @@ def login():
             else:
                 session['id'] = user.id
                 return redirect(url_for('index'))
-
-      return render_template('login.html')
+    return render_template('login.html')
 
 
 @app.route('/register',methods = ['GET','POST'])
