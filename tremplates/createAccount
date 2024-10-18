@@ -1,0 +1,64 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+Create Account
+{% endblock %}
+
+{% block content %}
+<h1>Quick Fix Household Services</h1>
+<h4>Customer Signup</h4>
+
+<form method="POST">
+    <label for="username" class="form-label">Email ID(Username):
+        <input type="text" id="username" name="username" class="form-control" required>
+    </label>
+    <br>
+    <label for="password">Password:
+        <input type="password" id="password" name="password" class="form-control" required>
+    </label>
+    <br>
+    <label for="fullname">Fullname:
+        <input type="text" id="fullname" name="fullname" class="form-control" required>
+    </label>
+    <br>
+    <label for="address">Address:
+        <textarea type="address" id="address" name="address" class="form-control" required></textarea>
+
+    </label>
+    <br>
+    <label for="pincode">Pincode:
+        <input type="text" id="pincode" name="pincode" class="form-control" required>
+    </label>
+    <input type="submit" value="Register" class="btn btn-success">
+
+    <a href="/login">Login here</a>
+
+</form>
+{% endblock %}
+
+{% block style %}
+<style>
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        }
+    input{
+        margin: 10px;
+    }
+    a{
+        margin: 5px;
+    }
+   
+    h1{
+        margin-top: 80px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    h4{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+</style>
+{% endblock %}
